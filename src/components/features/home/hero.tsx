@@ -20,7 +20,7 @@ export default function Hero() {
       {/* Content */}
       <div className="relative flex h-full items-end pb-32 md:pb-40">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="max-w-4xl absolute bottom-8 left-10">
+          <div className="max-w-4xl absolute bottom-8 left-10 md:left-32">
             <h1 className="text-3xl font-light text-white md:text-5xl lg:text-6xl mb-4">
               Unveil Your Best Self with Cosmedix Clinics&apos; Expert Care and
               Cutting-Edge Treatments

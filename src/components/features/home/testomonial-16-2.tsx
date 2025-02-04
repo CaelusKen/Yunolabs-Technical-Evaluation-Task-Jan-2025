@@ -91,7 +91,7 @@ export default function Testimonials() {
   return (
     <section className="w-full bg-[#CDBCAB] py-24">
       <div className="container mx-auto px-4 md:px-6">
-        <h2 className="mb-16 text-center text-[56px] font-extralight text-zinc-800">
+        <h2 className="mb-16 text-center text-[56px] font-semibold text-[#6B6356]">
           Don&apos;t just take our word for it
         </h2>
 
