@@ -2,8 +2,12 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Facebook, Instagram, Youtube, ArrowUp } from "lucide-react";
+import { ArrowUp } from "lucide-react";
 import Logo from "@/assets/images/Logo.png";
+import FacebookLogo from "@/assets/images/facebook.png";
+import InstagramLogo from "@/assets/images/instagram.png";
+import TiktokLogo from "@/assets/images/tik-tok.png";
+import YoutubeLogo from "@/assets/images/youtube.png";
 
 const navigation = {
   main: [
@@ -15,10 +19,10 @@ const navigation = {
     { name: "Locate Us", href: "/locate-us" },
   ],
   social: [
-    { name: "Facebook", icon: Facebook, href: "#" },
-    { name: "Instagram", icon: Instagram, href: "#" },
-    { name: "TikTok", icon: Youtube, href: "#" },
-    { name: "YouTube", icon: Youtube, href: "#" },
+    { name: "Facebook", image: FacebookLogo, href: "#" },
+    { name: "Instagram", image: InstagramLogo, href: "#" },
+    { name: "TikTok", image: TiktokLogo, href: "#" },
+    { name: "YouTube", image: YoutubeLogo, href: "#" },
   ],
 };
 
@@ -105,7 +109,11 @@ export default function Footer() {
                     href={item.href}
                     className="text-white/70 transition-colors hover:text-white"
                   >
-                    <item.icon className="h-5 w-5" />
+                    <Image
+                      src={item.image}
+                      alt={`${item.href.split(".")[1]} Logo`}
+                      className="w-5 h-5"
+                    />
                     <span className="sr-only">{item.name}</span>
                   </Link>
                 ))}

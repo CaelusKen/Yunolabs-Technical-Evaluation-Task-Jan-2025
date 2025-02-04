@@ -3,7 +3,11 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Facebook, Instagram, Youtube, Twitter, X } from "lucide-react";
+import { X } from "lucide-react";
+import FacebookLogo from "@/assets/images/facebook.png";
+import InstagramLogo from "@/assets/images/instagram.png";
+import TiktokLogo from "@/assets/images/tik-tok.png";
+import YoutubeLogo from "@/assets/images/youtube.png";
 import { Button } from "@/components/ui/button";
 import Logo from "@/assets/images/Logo.png";
 
@@ -20,10 +24,10 @@ export default function Navbar() {
   ];
 
   const socialLinks = [
-    { icon: Facebook, href: "#" },
-    { icon: Instagram, href: "#" },
-    { icon: Twitter, href: "#" },
-    { icon: Youtube, href: "#" },
+    { image: FacebookLogo, href: "https://www.facebook.com" },
+    { image: InstagramLogo, href: "https://www.instagram.com" },
+    { image: TiktokLogo, href: "https://www.x.com" },
+    { image: YoutubeLogo, href: "https://www.youtube.com" },
   ];
 
   return (
@@ -74,8 +78,8 @@ export default function Navbar() {
           }`}
         >
           <div className="flex h-fit flex-col px-4 md:px-6">
-            <div className="grid grid-cols-2 justify-items-start gap-x-4 gap-y-6 pt-8">
-              <div className="space-y-6">
+            <div className="grid grid-cols-2 w-fit gap-x-32 pt-8">
+              <div className="space-y-14">
                 {navLinks.slice(0, 3).map((link) => (
                   <Link
                     key={link.label}
@@ -83,11 +87,11 @@ export default function Navbar() {
                     className="block text-2xl font-light text-[#8B6E5B] hover:text-[#6D574A]"
                     onClick={() => setIsOpen(false)}
                   >
-                    {link.label}
+                    <p className="text-[40px] font-semibold">{link.label}</p>
                   </Link>
                 ))}
               </div>
-              <div className="space-y-6">
+              <div className="space-y-14">
                 {navLinks.slice(3).map((link) => (
                   <Link
                     key={link.label}
@@ -95,7 +99,7 @@ export default function Navbar() {
                     className="block text-2xl font-light text-[#8B6E5B] hover:text-[#6D574A]"
                     onClick={() => setIsOpen(false)}
                   >
-                    {link.label}
+                    <p className="text-[40px] font-semibold">{link.label}</p>
                   </Link>
                 ))}
               </div>
@@ -108,7 +112,11 @@ export default function Navbar() {
                     href={link.href}
                     className="text-[#8B6E5B] hover:text-[#6D574A]"
                   >
-                    <link.icon className="h-5 w-5" />
+                    <Image
+                      src={link.image}
+                      alt={`${link.href.split(".")[1]} Logo`}
+                      className="w-5 h-5 filter brightness-0 sepia-100 hue-rotate-[300deg] saturate-[150%] contrast-[0.8] transition-all duration-300 hover:brightness-100 hover:sepia-0 hover:hue-rotate-0 hover:saturate-100 hover:contrast-100"
+                    />
                     <span className="sr-only">Social media</span>
                   </Link>
                 ))}
