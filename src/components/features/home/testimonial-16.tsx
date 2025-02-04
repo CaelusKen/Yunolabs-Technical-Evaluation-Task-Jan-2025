@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Testomonial01 from "@/assets/images/Testomonial01.jpg";
-import Testomonial02 from "@/assets/images/Testomonial02.jpg";
+import Testomonial01 from "@/assets/images/Testomonial01.webp";
+import Testomonial02 from "@/assets/images/Testomonial02.webp";
 
 const features = [
   {
