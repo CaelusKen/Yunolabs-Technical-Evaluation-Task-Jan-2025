@@ -61,7 +61,7 @@ export default function Navbar() {
 
           <Button
             asChild
-            className="bg-[#8B6E5B] rounded-full px-6 py-2 text-sm font-light text-white hover:bg-[#6D574A]"
+            className="bg-zinc-900 rounded-full px-6 py-2 text-sm font-light text-white hover:bg-zinc-700"
           >
             <Link href="/book">Book Now</Link>
           </Button>

@@ -67,7 +67,7 @@ const concerns = [
 export default function Concerns() {
   const [emblaRef, emblaApi] = useEmblaCarousel({
     align: "start",
-    loop: false,
+    loop: true,
     skipSnaps: false,
     dragFree: true,
   });
@@ -88,7 +88,7 @@ export default function Concerns() {
 
   return (
     <section className="w-full bg-[#F5F5F5] py-24">
-      <div className="container mx-auto px-4 md:px-6">
+      <div className="container mx-auto px-4">
         <div className="mb-12">
           <h2 className="text-4xl font-extralight text-zinc-800">Concerns</h2>
           <p className="mt-4 text-zinc-600">
