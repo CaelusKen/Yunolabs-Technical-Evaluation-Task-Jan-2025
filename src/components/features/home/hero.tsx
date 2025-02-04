@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import HeroImage from "@/assets/images/Hero.jpg";
+import HeroImage from "@/assets/images/Hero.webp";
 
 export default function Hero() {
   return (

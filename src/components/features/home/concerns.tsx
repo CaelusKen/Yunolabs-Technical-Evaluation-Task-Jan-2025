@@ -6,15 +6,15 @@ import useEmblaCarousel from "embla-carousel-react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-import Concern01 from "@/assets/images/Concern01.png";
-import Concern02 from "@/assets/images/Concern02.png";
-import Concern03 from "@/assets/images/Concern03.png";
-import Concern04 from "@/assets/images/Concern04.png";
-import Concern05 from "@/assets/images/Concern05.png";
-import Concern06 from "@/assets/images/Concern06.png";
-import Concern07 from "@/assets/images/Concern07.png";
-import Concern08 from "@/assets/images/Concern08.png";
-import Concern09 from "@/assets/images/Concern09.png";
+import Concern01 from "@/assets/images/Concern01.webp";
+import Concern02 from "@/assets/images/Concern02.webp";
+import Concern03 from "@/assets/images/Concern03.webp";
+import Concern04 from "@/assets/images/Concern04.webp";
+import Concern05 from "@/assets/images/Concern05.webp";
+import Concern06 from "@/assets/images/Concern06.webp";
+import Concern07 from "@/assets/images/Concern07.webp";
+import Concern08 from "@/assets/images/Concern08.webp";
+import Concern09 from "@/assets/images/Concern09.webp";
 
 const concerns = [
   {
